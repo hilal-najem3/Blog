@@ -13,13 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Auth::routes(['verify' => true]);
-
-Route::prefix('/')->group(function() {
-	Route::get('/', 'User\HomeController@index')->name('home');
+Route::get('/', function() {
+    return redirect()->route('articles.index');
 });
 
-Route::get('/login/{social}/callback','Auth\LoginController@handleProviderCallback')->where('social','twitter|facebook|linkedin|google|github|bitbucket');
+Route::resource('articles', 'ArticleController');
+
+Auth::routes();
 
 // Special Routes
 Route::prefix('special')->group(function() {
