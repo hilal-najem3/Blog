@@ -10,7 +10,7 @@
                 <div class="card-body">
 
                     <p>
-                        <img src="{{ $article->getFirstMediaUrl('main_images', 'main') }}" />
+                        <img src="{{ asset($article->getFirstMediaUrl('main_images', 'main')) }}" />
                     </p>
 
                     <p>

@@ -10,24 +10,7 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
-
                         <div class="form-group row">
-
-                           <label for="name" class="col-md-4 control-label text-md-right">Register With</label>
-
-                           <div class="col-md-6">
-
-                               <a href="{{ url('login/facebook') }}" class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook-square" style="font-size:24px"></i></a>
-
-                               <a href="{{ url('login/twitter') }}" class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter-square" style="font-size:24px"></i></a>
-
-                               <a href="{{ url('login/google') }}" class="btn btn-social-icon btn-google"><i class="fa fa-google" style="font-size:24px"></i></a>
-                           </div>
-
-                       </div>
-
-
-                     <div class="form-group row">
                         <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                         <div class="col-md-6">
