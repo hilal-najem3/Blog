@@ -25,3 +25,7 @@ Auth::routes();
 Route::prefix('special')->group(function() {
 	Route::get('/back/{name}', 'ReturnRedirectController@back')->name('go.back');
 });
+
+Route::get('theme', function() {
+	return view('theme');
+});
