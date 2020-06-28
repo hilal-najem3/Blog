@@ -4,3 +4,4 @@
 <link rel="stylesheet" href="{{ asset('css/theme/owl.theme.default.min.css') }}">
 <!-- MAIN CSS -->
 <link rel="stylesheet" href="{{ asset('css/theme/style.css') }}">
+<link rel="stylesheet" href="{{ asset('css/theme/custom.css') }}">
