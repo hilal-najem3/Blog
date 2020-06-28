@@ -63,4 +63,9 @@ class Article extends Model implements HasMedia
             ->height(200);
     }
 
+
+    public function getMediaUrlForView() 
+    {
+        $article->getMedia('images')->first()->getUrl('main_images', 'thumb');
+    }
 }

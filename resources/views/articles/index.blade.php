@@ -12,7 +12,8 @@
                     @forelse ($articles as $article)
                     <div class="row">
                         <div class="col-md-4">
-                            <img src="{{ asset($article->getFirstMediaUrl('main_images', 'thumb')) }}" />
+                            <!-- <img src="{{ $article->getFirstMediaUrl('main_images', 'thumb') }}" /> -->
+                            <img src="{{ $article->getMedia('main_images')->first()->getUrl('thumb') }}" />
                         </div>
                         <div class="col-md-8">
                             <a href="{{ route('articles.show', $article->id) }}"><h2>{{ $article->title }}</h2></a>
